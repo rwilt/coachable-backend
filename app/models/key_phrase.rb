@@ -1,0 +1,2 @@
+class KeyPhrase < ApplicationRecord
+end

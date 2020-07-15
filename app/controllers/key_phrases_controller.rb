@@ -1,0 +1,2 @@
+class KeyPhrasesController < ApplicationController
+end
