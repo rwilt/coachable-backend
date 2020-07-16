@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
   resources :game_joins
   resources :interviews
-  resources :key_phrases
-  resources :answers
+  resources :key_phrases 
   resources :questions
   resources :games
   resources :users
