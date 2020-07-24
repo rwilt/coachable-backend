@@ -8,7 +8,9 @@ class GameJoinsController < ApplicationController
     end
 
     def create
+     
         gameJoin = GameJoin.create(gameJoin_params)
+   
         render json: gameJoin
     end
 
@@ -21,7 +23,7 @@ class GameJoinsController < ApplicationController
     private
 
     def gameJoin_params
-        params.permit(:game_id, :question_id, :answer, :score, :result_summary)
+        params.require(:game_join).permit(:game_id, :question_id, :answer, :score, :result_summary)
     end
 
 end

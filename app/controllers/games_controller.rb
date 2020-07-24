@@ -13,6 +13,7 @@ class GamesController < ApplicationController
 
     def create
         game = Game.create(game_params)
+        byebug
         render json: game
     end
 
@@ -31,6 +32,6 @@ class GamesController < ApplicationController
 
     private
     def game_params
-        params.permit(:user_id)
+        params.require(:game).permit(:user_id)
     end
 end
