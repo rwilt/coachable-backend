@@ -5,7 +5,7 @@ class CreateGameJoins < ActiveRecord::Migration[6.0]
       t.integer :question_id
       t.integer :game_id
       t.integer :score
-      t.string :result
+      t.string :result_summary
 
       t.timestamps
     end
