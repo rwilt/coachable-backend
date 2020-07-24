@@ -1,5 +1,8 @@
 class QuestionsController < ApplicationController
-    
+    def index
+        @question = Question.all
+        render json: @question
+    end
  
     def create
         question = Question.create(question_params)

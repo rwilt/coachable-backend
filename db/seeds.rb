@@ -40,16 +40,16 @@ key_phrase1 = KeyPhrase.create(phrases: ["JavaScript", "Ruby", "Python"], indust
 key_phrase2 = KeyPhrase.create(phrases: ["Managed", "Ownership", "Results"], industry: "General", game_id: game2.id)
 
 GameJoin.create(question_id: question1.id, game_id: game1.id)
-GameJoin.create(question_id: question2.id, game_id: game1.id)
+GameJoin.create(question_id: question9.id, game_id: game1.id)
 GameJoin.create(question_id: question3.id, game_id: game1.id)
 GameJoin.create(question_id: question4.id, game_id: game1.id)
 GameJoin.create(question_id: question5.id, game_id: game1.id)
-GameJoin.create(question_id: question1.id, game_id:game2.id)
-GameJoin.create(question_id: question6.id, game_id:game2.id)
-GameJoin.create(question_id: question7.id, game_id:game2.id)
-GameJoin.create(question_id: question8.id, game_id:game2.id)
-GameJoin.create(question_id: question9.id, game_id:game2.id)
-GameJoin.create(question_id: question10.id, game_id:game2.id)
+GameJoin.create(question_id: question1.id, game_id: game2.id)
+GameJoin.create(question_id: question6.id, game_id: game2.id)
+GameJoin.create(question_id: question7.id, game_id: game2.id)
+GameJoin.create(question_id: question8.id, game_id: game2.id)
+GameJoin.create(question_id: question9.id, game_id: game2.id)
+GameJoin.create(question_id: question10.id, game_id: game2.id)
 
 
 puts "finished seed"

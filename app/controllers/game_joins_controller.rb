@@ -1,5 +1,12 @@
 class GameJoinsController < ApplicationController
 
+
+    def index
+        @game_join = GameJoin.all
+        render json: @game_join
+      
+    end
+
     def create
         gameJoin = GameJoin.create(gameJoin_params)
         render json: gameJoin

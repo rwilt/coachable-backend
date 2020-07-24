@@ -1,5 +1,5 @@
 class KeyPhraseSerializer < ActiveModel::Serializer
-  attributes :id, :industry, :game_id
+  attributes :id, :industry, :game_id, :phrases
 
-  belongs_to :game
+  belongs_to :games
 end
