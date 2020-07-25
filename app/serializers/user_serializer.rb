@@ -5,5 +5,6 @@ class UserSerializer < ActiveModel::Serializer
   has_many :game_joins
   has_many :interviews
   has_many :questions, through: :game_joins
+  has_many :key_phrases
 
 end

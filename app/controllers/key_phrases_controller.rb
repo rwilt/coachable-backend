@@ -30,7 +30,7 @@ class KeyPhrasesController < ApplicationController
 
     private
     def key_params
-        params.permit(:phrases, :industry, :game_id)
+        params.permit(:phrases, :industry, :game_id, :user_id)
     end
 
 end
