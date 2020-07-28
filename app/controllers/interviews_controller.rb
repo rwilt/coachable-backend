@@ -25,7 +25,7 @@ class InterviewsController < ApplicationController
 
     private
     def interview_params
-        params.permit(:title, :date, :interviewer, :note, :user_id, :company, :industry, :result)
+        params.require(:interview).permit(:title, :date, :interviewer, :note, :user_id, :company, :industry, :result)
     end
 
 end

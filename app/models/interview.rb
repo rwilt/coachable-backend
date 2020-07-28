@@ -2,7 +2,10 @@ class Interview < ApplicationRecord
 belongs_to :user
 
 def simple_date
-self.date.strftime("%F")
+    if (self.date === nil)
+        return ""
+    end 
+self.date.strftime("%B %e, %Y")
 end
 
 end
