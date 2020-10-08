@@ -4,7 +4,7 @@ require_relative 'config/environment'
 
 use Rack::Cors do 
     allow do
-        origings '*'
+        origins '*'
         resource '*', headers: :any, methods: :any
     end
 end
