@@ -1,7 +1,7 @@
 class QuestionSerializer < ActiveModel::Serializer
-  attributes :id, :content, :industry
+  attributes :id, :content, :industry, :user_id
 
-  has_many :game_joins
-  has_many :games
-
+  belongs_to :game_joins
+  belongs_to :games
+  belongs_to :user
 end
