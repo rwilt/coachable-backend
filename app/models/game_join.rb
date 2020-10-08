@@ -1,6 +1,6 @@
 class GameJoin < ApplicationRecord
-belongs_to :question
-belongs_to :game
+belongs_to :question, optional: true
+belongs_to :game, optional: true
 
 # def total_score
 #     score = 0
